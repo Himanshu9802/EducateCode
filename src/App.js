@@ -1,10 +1,10 @@
 import './App.css';
-import Home from './Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Index from './MainComponent/Index';
 
 function App() {
   return (
-    <Home/>
+    <Index/>
   );
 }
 

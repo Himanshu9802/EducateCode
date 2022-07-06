@@ -1,16 +1,16 @@
-import React from 'react'
-import ParticlesComponent from '../Particles/Particles'
-
-import NavBar from '../NavBar/NavBar'
+import React from "react";
+import './style.css'
 
 const Home = () => {
   return (
-    <div>
-      
-    <NavBar/>
-        <ParticlesComponent id="tsparticles"/>
+    <div className="container-fluid">
+      <div className="row d-flex justify-content-center align-item-center">
+        <form>
+          <input/>
+        </form>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
