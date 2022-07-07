@@ -6,9 +6,9 @@
   text-align: center;
   padding-left: 40px;
   padding-right: 40px;
-  background: #fff9;
+  background: #fff;
+  z-index: 99;
 }
-
 .logo {
   float: left;
   width: auto;
@@ -115,9 +115,9 @@
   display: none;
 }
 
-.navigation .navJoinMobile button{
-    border-radius: 0;
-    width: 70%;
+.navigation .navJoinMobile button {
+  border-radius: 0;
+  width: 70%;
 }
 
 .navigation .navJoinMobile {
@@ -125,7 +125,7 @@
   bottom: -100px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 990px) {
   .navigation .navLinks,
   .navigation .navJoin {
     display: none;
@@ -136,7 +136,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 990px) {
   .navigation.responsive {
     position: relative;
   }

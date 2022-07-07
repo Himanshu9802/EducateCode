@@ -1,0 +1,57 @@
+#about {
+  margin-top: 100px;
+}
+
+#about .aboutIntro .col:first-child {
+  text-align: center;
+}
+
+#about .aboutIntro .col {
+  align-self: center;
+}
+
+.aboutText h4:first-of-type:first-letter {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.aboutText h4 {
+  line-height: 40px;
+}
+
+.featuresSection .featureHeading {
+  margin: 150px auto 100px auto;
+}
+
+.featuresSection .row .col {
+  align-self: center;
+}
+
+.featuresSection h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.featuresSection .featureRow:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 600px) {
+  .featureHeading {
+    margin: 80px auto 50px auto !important;
+  }
+  .featuresSection .featureRow {
+    flex-direction: column !important;
+  }
+  .featureRow .col:first-child {
+    margin-bottom: 40px;
+  }
+  .aboutText h4 , h5{
+    line-height: 27px;
+    font-size: 18px;
+  }
+  .featureRow .col:nth-child(2) {
+    margin-bottom: 50px;
+  }
+}

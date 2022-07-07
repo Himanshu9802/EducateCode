@@ -1,15 +1,19 @@
 import React from "react";
-import ParticlesComponent from "../Particles/Particles";
 
 import NavBar from "../NavBar/NavBar";
 import Home from "../Home/Home";
+import About from "../About/About";
+import Course from "../Course/Course";
+import Contact from "../Contact/Contact";
 
 const Index = () => {
   return (
-    <div>
+    <div className="container-fluid h-100 px-0">
       <NavBar />
-      <ParticlesComponent id="tsparticles" />
       <Home/>
+      <About/>
+      <Course/>
+      <Contact/>
     </div>
   );
 };
