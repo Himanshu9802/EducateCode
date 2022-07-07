@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  FaArrowRight,
-  FaBars,
-  FaChevronRight,
-  FaCross,
-  FaTimes,
-  FaWindowClose,
-} from "react-icons/fa";
+import { FaBars, FaChevronRight, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 
 const NavBar = () => {
@@ -16,7 +9,7 @@ const NavBar = () => {
       <nav>
         <div className="d-flex justify-content-between w-100 align-items-center">
           <div className="logoBox">
-            <img src="./images/logo.svg" alt="" className="logo" />
+            <img src="./images/logo.svg" alt="mainMenuLogo" className="logo" />
           </div>
           <div className="navLinks">
             <ol>
@@ -58,7 +51,11 @@ const NavBar = () => {
       </nav>
       <div className="mobileMenuItem">
         <div className="d-flex justify-content-between p-3 mb-5">
-          <img src="./images/logoWhite.svg" alt="" className="logo" />
+          <img
+            src="./images/logoWhite.svg"
+            alt="mobileMenuLogo"
+            className="logo"
+          />
 
           <FaTimes
             color="#ff5d5d"

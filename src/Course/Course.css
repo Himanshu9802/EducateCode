@@ -1,0 +1,116 @@
+.courseHeader h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.courseCardContainer{
+    height: 100%;
+    width: 20vw;
+    border: 1px solid #ced4da;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 4px 18px 30px 1px rgb(0 0 0 / 0.53);
+    transform: rotate(-0.17deg);
+    transition: all 0.4s ease;
+    text-align: center;
+    margin-right: 25px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.courseBody{
+    padding: 25px 15px;
+}
+
+.courseCardContainer .btnContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.courseHeading{
+    background-image: linear-gradient(245deg, rgb(251,133,116) 0%, rgba(148,187,233,1) 100%);
+    color: #fff;
+    padding: 5px 10px;
+    width: 100%;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.checkMore {
+  align-items: center;
+  background-image: linear-gradient(245deg, rgb(251,133,116) 0%, rgba(148,187,233,1) 100%);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgb(251,133,116,0.4) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.checkMore:active,
+.checkMore:hover {
+  outline: 0;
+}
+
+.checkMore span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.checkMore:hover span {
+  background: none;
+}
+
+@media (max-width: 990px) {
+  .courseCardContainer{
+    margin-right: 12px ;
+  }
+  .courseList {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+    .courseCardContainer{
+        margin-right: 0;
+        width: 100% !important;
+        margin-bottom: 50px;
+        border-radius: 20px;
+    }
+    .courseList{
+        flex-direction: column;
+        padding: 20px !important;
+    }
+}
+
+@media (min-width: 768px) {
+  .checkMore {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+
+@media (max-width: 1370px) {
+  .courseCardContainer{
+    width: 24vw;
+  }
+}
+
