@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FaBars, FaChevronRight, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const NavBar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   return (
@@ -14,29 +16,66 @@ const NavBar = () => {
           <div className="navLinks">
             <ol>
               <li>
-                <a href="" className="active">
+                <Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={600}
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="">About us</a>
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={600}
+                >
+                  About us
+                </Link>
               </li>
               <li>
-                <a href="">Course</a>
+                <Link
+                  activeClass="active"
+                  to="course"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={600}
+                >
+                  Course
+                </Link>
               </li>
               <li>
-                <a href="">Contact us</a>
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={600}
+                >
+                  Contact us
+                </Link>
               </li>
             </ol>
           </div>
           <div className="navJoin">
-            <button
-              onClick={() => {
-                alert("JoinNow");
-              }}
-              className="btn"
-            >
-              Join Now
+            <button className="btn">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={600}
+              >
+                Join Now
+              </Link>
             </button>
           </div>
           <button
@@ -45,7 +84,7 @@ const NavBar = () => {
               setMobileMenu(!mobileMenu);
             }}
           >
-            <FaBars color="#171E2B" size={30} />
+            <FaBars color="#058A42" size={30} />
           </button>
         </div>
       </nav>
@@ -66,18 +105,52 @@ const NavBar = () => {
         <div className="navLinksMobile">
           <ol>
             <li>
-              <a href="" className="active">
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={600}
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">About us</a>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={600}
+              >
+                About us
+              </Link>
             </li>
             <li>
-              <a href="">Course</a>
+              <Link
+                activeClass="active"
+                to="course"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={600}
+              >
+                Course
+              </Link>
             </li>
             <li>
-              <a href="">Contact us</a>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={600}
+              >
+                Contact us
+              </Link>
             </li>
           </ol>
         </div>

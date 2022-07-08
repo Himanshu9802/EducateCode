@@ -45,7 +45,8 @@
 .navJoinMobile button,
 .navJoin button {
   background-color: #f7fbff;
-  border: 2px solid #171e2b;
+  border: 2px solid #058A42;
+  color: #058A42;
   border-radius: 50px;
   padding: 10px 50px;
   text-align: center;

@@ -36,7 +36,7 @@ const About = () => {
               <div className="text-justify aboutText">
                 <h6 className="smallHeading">
                   <FaClock
-                    color="#FB8574"
+                    color="#058A42"
                     className="smallHeadingIcon"
                     size={18}
                   />
@@ -60,7 +60,7 @@ const About = () => {
               <div className="text-justify aboutText">
                 <h6 className="smallHeading">
                   <FaCode
-                    color="#FB8574"
+                    color="#058A42"
                     className="smallHeadingIcon"
                     size={18}
                   />
