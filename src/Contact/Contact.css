@@ -2,39 +2,130 @@
   font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
   font-size: 40px;
+  color: #058a42;
 }
 
-.input-container input:focus ~ label,
-.input-container input:valid ~ label{
-	top:-12px;
-	font-size:12px;
-	
+.contactHeader {
+  margin-top: 50px;
 }
 
-.input-container{
-	position:relative;
-	margin-bottom:25px;
+.contactForm {
+  width: 100%;
+  border: 3px solid #e2f0ff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 40px 45px;
+  background-color: #F7FBFF;
 }
-.input-container label{
-	position:absolute;
-	top:0px;
-	left:0px;
-	font-size:16px;
-	color:#000;	
-    pointer-event:none;
-	transition: all 0.5s ease-in-out;
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
 }
-.input-container input{ 
-  border:0;
-  border-bottom:1px solid #555;  
-  background:transparent;
-  width:100%;
-  padding:8px 0 5px 0;
-  font-size:16px;
-  color:#000;
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: 0.1px solid #058a42;
+  border-radius: 10px;
+  background-color: transparent;
 }
-.input-container input:focus{ 
- border:none;	
- outline:none;
- border-bottom:1px solid #e74c3c;	
+input:focus {
+  outline: none;
+  /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25); */
 }
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  background-color: #F7FBFF;
+  padding: 0 10px;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -12px;
+  font-size: 14px;
+  color: #058a42;
+}
+
+.formFloat{
+  transform: translateY(-67px);
+  font-weight: 900;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.contactBTN{
+    background-color: #f7fbff;
+    border: 2px solid #058A42;
+    color: #058A42;
+    border-radius: 50px;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    transform: rotate(-0.17deg);
+    transition: all 0.4s ease;
+}
+
+.accordion-item,
+.accordion-button{
+  background-color: transparent;
+}
+
+.accordion-item{
+  border: 0;
+  border-bottom: 3px solid #e2f0ff;
+}
+
+.accordion-button:not(.collapsed){
+  color: #058A42;
+  background-color: transparent;
+  border-bottom: 1px solid #058A42;
+}
+
+.accordion-button:focus{
+  box-shadow: none;
+}
+
+.footerText{
+  color: #999;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .formRow,
+  .faqrow{
+    flex-direction: column;
+  }
+
+  .formRow .col-6,
+  .formRow .col-5,
+  .faqrow .col-6{
+    width: 100%;
+  }
+
+  .formRow .col-5{
+    margin-bottom: 40px;
+  }
+
+  .contactHeader {
+    padding-top: 0 !important;
+  }
+
+}
+
+
